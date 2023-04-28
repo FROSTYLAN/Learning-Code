@@ -17,7 +17,7 @@
 .notices-container article {
   margin: 8px;
   width: 250px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .notices-container article:hover {
   transform: scale(105%);
