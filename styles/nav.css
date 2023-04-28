@@ -1,0 +1,139 @@
+/* ---------- NAV ---------- */
+#menu {
+  display: none;
+  cursor: pointer;
+}
+#title-logo {
+  display: none;
+  font-size: 24px;
+}
+#title-logo b {
+  color: #e75e7c;
+  font-size: 24px;
+}
+
+nav {
+  position: fixed;
+  width: calc(100% - 150px);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  color: #fff;
+}
+
+nav img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0 30px 0 0;
+}
+
+nav .nav-left {
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul li {
+  margin-left: 30px;
+}
+nav .nav-right {
+  display: flex;
+}
+nav .nav-right label {
+  display: flex;
+}
+nav .nav-right label {
+  border: 1px solid #57606a;
+  background-color: #24292f;
+  padding: 4px 8px;
+  border-radius: 8px;
+  height: 42px;
+}
+nav .nav-right label input {
+  border: none;
+  background-color: #24292f;
+  color: #fff;
+}
+nav .nav-right label div {
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #57606a;
+  background-color: #24292f;
+  padding: 2px 8px;
+  margin: 4px;
+}
+nav .nav-right button {
+  margin-left: 16px;
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 8px;
+}
+nav .nav-right .border-btn {
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1012px) {
+  nav {
+    width: calc(100% - 80px);
+  }
+
+  .nav-left ul {
+    position: absolute;
+    display: none;
+    top: 70px;
+    left: 37px;
+    border: 1px solid #fff;
+    border-radius: 0 12px 12px 12px;
+    padding: 12px;
+  }
+  nav .nav-left .hidden {
+    display: block;
+  }
+  nav .nav-left ul li {
+    margin: 0 0 8px 0;
+  }
+  .nav-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #title-logo {
+    display: block;
+  }
+  nav {
+    width: calc(100% - 40px);
+  }
+  nav #menu {
+    display: block;
+  }
+  nav .nav-right {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    display: none;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 12px 0 12px 12px;
+  }
+  nav .hidden {
+    display: flex;
+  }
+  nav .nav-right label {
+    display: none;
+  }
+  nav .nav-right button {
+    margin: 0;
+  }
+  nav .nav-right .border-btn {
+    border: none;
+  }
+}

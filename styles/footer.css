@@ -1,0 +1,112 @@
+footer {
+  background-color: #10141c;
+  color: #fff;
+  padding: 32px 16px 0 16px;
+}
+
+.suscribe-container h2 {
+  font-size: 1.6rem;
+}
+.suscribe-container h2 b {
+  font-size: 1.6rem;
+  color: #e75e7c;
+}
+.suscribe-container p {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.suscribe-container span {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: rgb(169, 169, 169);
+}
+.suscribe-container button {
+  display: block;
+  border: 1px solid rgb(101, 101, 101);
+  transition: 0.1s;
+  background: none;
+  color: #fff;
+  font-weight: bolder;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.suscribe-container button:hover {
+  border: 2px solid #fff;
+}
+
+.options-footer-container div {
+  display: flex;
+  margin-bottom: 40px;
+}
+.options-footer-container ul {
+  padding-right: 16px;
+}
+.options-footer-container ul li {
+  list-style: none;
+  margin-bottom: 16px;
+  color: rgb(169, 169, 169);
+  font-size: 14px;
+}
+
+.social-container {
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.media-container {
+  width: 234px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+.social-container ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-container ul li {
+  margin-right: 16px;
+  list-style: none;
+  font-size: 12px;
+  color: rgb(169, 169, 169);
+}
+
+@media screen and (min-width: 540px) {
+  footer {
+    padding: 40px;
+  }
+  .social-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .options-footer-container {
+    display: flex;
+  }
+  .options-footer-container div {
+    width: 50%;
+  }
+  .options-footer-container div ul {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1006px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .suscribe-container {
+    width: 35%;
+    padding-right: 16px;
+  }
+  footer .options-footer-container {
+    width: 65%;
+  }
+  footer .social-container {
+    width: 100%;
+  }
+}
