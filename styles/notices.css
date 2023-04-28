@@ -30,6 +30,25 @@
   display: none;
 }
 
+#about img {
+  transition: 0.4s;
+}
+#about img:hover {
+  transform: scale(105%);
+}
+#courses img {
+  transition: 0.4s;
+}
+#courses img:hover {
+  transform: scale(120%);
+}
+.social-container img {
+  transition: 0.4s;
+}
+.social-container img:hover {
+  transform: scale(120%);
+}
+
 @media screen and (min-width: 540px) {
   .notices-container {
     padding: 40px;
