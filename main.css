@@ -41,6 +41,11 @@ header {
   color: #fff;
 }
 
+#options-nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media screen and (min-width: 540px) {
   .principal-container {
     margin-right: 40px;

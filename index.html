@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/help.css" />
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/courses.css" />
+    <link rel="stylesheet" href="./styles/notices.css" />
 
     <!--Particles-->
 
@@ -41,10 +42,10 @@
         <div class="nav-left">
           <img id="logo-nav" src="./assets/icon.svg" alt="" />
           <ul id="options-nav">
-            <li>Nosotros</li>
-            <li>Cursos</li>
-            <li>Noticias</li>
-            <li>Ayuda</li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#notices">Noticias</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
         <div class="nav-right">
@@ -73,7 +74,7 @@
     </header>
 
     <!--About me Section-->
-    <section class="about-container">
+    <section id="about" class="about-container">
       <h2>Sobre nosotros</h2>
       <article class="col-md-6">
         <p>
@@ -102,17 +103,93 @@
     </section>
 
     <!--Courses Section-->
-    <section class="courses-container">
+    <section id="courses" class="courses-container">
       <h2>Cursos</h2>
       <div id="courses"></div>
     </section>
 
     <!--Notices Section-->
-    <section></section>
+    <section id="notices" class="notices-container">
+      <h2>Noticias</h2>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="notices-div">
+              <article>
+                <img src="./assets/1.png" alt="" width="250" height="150" />
+                <p>Google anuncia la versión 12 de Angular</p>
+              </article>
+              <article>
+                <img src="./assets/2.png" alt="" width="250" height="150" />
+                <p>React Native llega a Windows</p>
+              </article>
+              <article>
+                <img src="./assets/3.png" alt="" width="250" height="150" />
+                <p>Nuevas características en CSS Grid</p>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="notices-div">
+              <article>
+                <img src="./assets/4.png" alt="" width="250" height="150" />
+                <p>GraphQL se convierte en una especificación oficial</p>
+              </article>
+              <article>
+                <img src="./assets/5.png" alt="" width="250" height="150" />
+                <p>La última versión de Vue.js</p>
+              </article>
+              <article>
+                <img src="./assets/6.png" alt="" width="250" height="150" />
+                <p>Actualizaciones en Bootstrap 5</p>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="notices-div">
+              <article>
+                <img src="./assets/7.png" alt="" width="250" height="150" />
+                <p>Ampliación de la compatibilidad con TypeScript</p>
+              </article>
+              <article>
+                <img src="./assets/8.png" alt="" width="250" height="150" />
+                <p>WebAssembly se convierte en una especificación oficial</p>
+              </article>
+              <article>
+                <img src="./assets/9.png" alt="" width="250" height="150" />
+                <p>CSS Houdini</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
     <!--Help Section-->
-    <section class="help-container row">
-      <h2 class="title-help">Ayuda</h2>
+    <section id="faq" class="help-container row">
+      <h2 class="title-help">Preguntas Frecuentes</h2>
       <div class="accordion col-12 col-md-6" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
