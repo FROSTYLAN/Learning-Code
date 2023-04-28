@@ -16,3 +16,58 @@ header {
   background-image: url(./assets/hero-bg.webp);
   background-position: -200px 0px;
 }
+
+.principal-container {
+  position: absolute;
+  color: #fff;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+.form-main {
+  display: flex;
+  flex-direction: column;
+}
+.form-main input,
+.form-main button {
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border: none;
+}
+.form-main button {
+  background-color: #f86d4a;
+  color: #fff;
+}
+
+@media screen and (min-width: 540px) {
+  .principal-container {
+    margin-right: 40px;
+  }
+  .principal-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .form-main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .form-main input {
+    width: 69%;
+  }
+  .form-main button {
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1006px) {
+  header {
+    justify-content: start;
+  }
+  .principal-container img {
+    margin-left: 40px;
+  }
+  .principal-container div {
+    margin-left: 28px;
+  }
+}

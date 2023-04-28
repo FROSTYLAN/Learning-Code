@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles/nav.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/help.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/courses.css" />
 
     <!--Particles-->
 
@@ -54,19 +56,62 @@
           <button class="border-btn">Únete</button>
         </div>
       </nav>
+      <div class="principal-container">
+        <img src="./assets/git-branch-collaboration.svg" alt="" />
+        <div>
+          <h1 style="color: #ffa28b">Empieza a aprender ahora!</h1>
+          <p>
+            Proyectos desde cero, clases grabadas, buenas prácticas y todo lo
+            nuevo del mundo del Frontend.
+          </p>
+          <form class="form-main" action="#">
+            <input type="email" placeholder="Correo Electrónico" />
+            <button>Regístrate</button>
+          </form>
+        </div>
+      </div>
     </header>
 
     <!--About me Section-->
-    <section></section>
+    <section class="about-container">
+      <h2>Sobre nosotros</h2>
+      <article class="col-md-6">
+        <p>
+          En nuestra plataforma de aprendizaje, nos apasiona ayudar a las
+          personas a desarrollar habilidades en tecnologías frontend. Creemos
+          que el desarrollo web es una habilidad valiosa y emocionante que puede
+          abrir muchas puertas en el mundo digital de hoy.
+        </p>
+        <p>
+          Nos esforzamos por crear contenido de alta calidad y fácilmente
+          accesible para que cualquier persona, sin importar su nivel de
+          experiencia, pueda aprender y mejorar sus habilidades de programación.
+        </p>
+        <p>
+          Nuestro equipo de expertos en tecnologías frontend está siempre
+          disponible para responder tus preguntas y brindarte apoyo a lo largo
+          de tu camino de aprendizaje.
+        </p>
+        <p>
+          ¡Únete a nuestra comunidad de aprendices y comienza tu camino hacia el
+          éxito como desarrollador frontend!
+        </p>
+      </article>
+
+      <div class="col-md-6"><img src="./assets/globe.webp" alt="" /></div>
+    </section>
 
     <!--Courses Section-->
-    <section class="courses-container"></section>
+    <section class="courses-container">
+      <h2>Cursos</h2>
+      <div id="courses"></div>
+    </section>
 
     <!--Notices Section-->
     <section></section>
 
     <!--Help Section-->
-    <section class="help-container particles-js row">
+    <section class="help-container row">
       <h2 class="title-help">Ayuda</h2>
       <div class="accordion col-12 col-md-6" id="accordionExample">
         <div class="accordion-item">
@@ -297,5 +342,6 @@
 
     <!-- stats.js -->
     <script src="js/lib/stats.js"></script>
+    <script type="module" src="./sphereTech.js"></script>
   </body>
 </html>
