@@ -17,6 +17,10 @@
 .notices-container article {
   margin: 8px;
   width: 250px;
+  transition: 0.5s;
+}
+.notices-container article:hover {
+  transform: scale(105%);
 }
 
 .notices-container article:nth-child(1) {
